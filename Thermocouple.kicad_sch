@@ -1678,6 +1678,18 @@
 		)
 	)
 	(rectangle
+		(start 143.51 12.7)
+		(end 200.66 59.69)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "19212eaa-023e-48f5-ba03-ca9389a88ca1")
+	)
+	(rectangle
 		(start 12.7 12.7)
 		(end 142.24 54.61)
 		(stroke
@@ -1699,6 +1711,46 @@
 		)
 		(uuid "14bb1c1b-d3fa-407f-b23f-7bb66388fc41")
 	)
+	(text "ADC & Connections to Microcontroller"
+		(exclude_from_sim no)
+		(at 181.102 58.42 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "1974a036-175b-4981-9638-0076c1fcf422")
+	)
+	(text "SPI MOSI"
+		(exclude_from_sim no)
+		(at 149.606 30.988 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "36e64a96-2e13-4aeb-8689-075320c5803d")
+	)
+	(text "SPI SEL A"
+		(exclude_from_sim no)
+		(at 149.606 28.194 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "64c15d6b-4962-4c02-a5e1-4de9d626ee6f")
+	)
+	(text "SPI MISO\n"
+		(exclude_from_sim no)
+		(at 195.58 28.448 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "b4c592ca-6736-414d-9d80-5d4b1e3f30cc")
+	)
 	(text "90V/V\n~3.78mV/^{o}C Post Amp"
 		(exclude_from_sim no)
 		(at 129.54 30.226 0)
@@ -1708,6 +1760,16 @@
 			)
 		)
 		(uuid "c258e2a7-4fc9-4765-8f78-b6e1029cb711")
+	)
+	(text "SPI CLK"
+		(exclude_from_sim no)
+		(at 150.368 43.434 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "ffb1fa9c-371d-4c76-8f1f-9eb80a0e62ea")
 	)
 	(junction
 		(at 44.45 39.37)
@@ -1719,7 +1781,7 @@
 		(at 116.84 33.02)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "6c6b57ff-51e9-4c9f-a134-a79df64ba285")
+		(uuid "5ee53d69-7f32-423e-b705-a5f4634d531e")
 	)
 	(junction
 		(at 62.23 39.37)
@@ -1785,16 +1847,6 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 33.02) (xy 129.54 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1d200646-fe67-4da1-b996-991d8c7f90d9")
-	)
-	(wire
-		(pts
 			(xy 72.39 36.83) (xy 80.01 36.83)
 		)
 		(stroke
@@ -1842,6 +1894,16 @@
 			(type default)
 		)
 		(uuid "682caf7a-1cdb-46a0-a32d-5edb75821748")
+	)
+	(wire
+		(pts
+			(xy 116.84 33.02) (xy 154.94 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "753f3069-11d8-471a-9b3a-2ec30e421866")
 	)
 	(wire
 		(pts
@@ -1975,6 +2037,84 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 190.5 50.8 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0a5eb0fa-b549-4829-be9a-d8e2ffa1e056")
+		(property "Reference" "#PWR09"
+			(at 190.5 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 190.5 55.88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 190.5 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 190.5 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 190.5 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7ce3e32e-fbb6-4056-a0b8-148483263bb2")
+		)
+		(instances
+			(project "Thermocouple"
+				(path "/60841e86-8825-4560-bb65-4e9d345e325b"
+					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 44.45 46.99 0)
 		(unit 1)
 		(body_style 1)
@@ -2046,6 +2186,84 @@
 			(project "Thermocouple"
 				(path "/60841e86-8825-4560-bb65-4e9d345e325b"
 					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 190.5 22.86 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1d43cb39-76d9-4bb6-88d8-76ff346f56b3")
+		(property "Reference" "#PWR08"
+			(at 190.5 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 190.5 17.78 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 190.5 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 190.5 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 190.5 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9549a79f-ef53-4cc6-af34-0a729fe5a0b1")
+		)
+		(instances
+			(project "Thermocouple"
+				(path "/60841e86-8825-4560-bb65-4e9d345e325b"
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -2495,7 +2713,7 @@
 	)
 	(symbol
 		(lib_id "Imported_Parts:ADC124S051CIMM")
-		(at 176.53 40.64 0)
+		(at 172.72 38.1 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2506,7 +2724,7 @@
 		(fields_autoplaced yes)
 		(uuid "4f1d54f8-1938-470e-874c-d937aeaa3c22")
 		(property "Reference" "U2"
-			(at 176.53 17.78 0)
+			(at 172.72 15.24 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2516,7 +2734,7 @@
 			)
 		)
 		(property "Value" "ADC124S051CIMM"
-			(at 176.53 20.32 0)
+			(at 172.72 17.78 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2526,7 +2744,7 @@
 			)
 		)
 		(property "Footprint" "ADC124S051CIMM:SOP50P490X110-10N"
-			(at 176.53 40.64 0)
+			(at 172.72 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2538,7 +2756,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/gpn/adc124s051"
-			(at 176.53 40.64 0)
+			(at 172.72 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2550,7 +2768,7 @@
 			)
 		)
 		(property "Description" "4 Channel, 200 ksps to 500 kSPS, 12-Bit A/D Converter"
-			(at 176.53 40.64 0)
+			(at 172.72 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2562,7 +2780,7 @@
 			)
 		)
 		(property "DATASHEET_URL" "http://www.ti.com/lit/gpn/adc124s051"
-			(at 176.53 40.64 0)
+			(at 172.72 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2574,7 +2792,7 @@
 			)
 		)
 		(property "MANUFACTURER" "Texas Instruments"
-			(at 176.53 40.64 0)
+			(at 172.72 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2586,7 +2804,7 @@
 			)
 		)
 		(property "MPN" "ADC124S051CIMM/NOPB"
-			(at 176.53 40.64 0)
+			(at 172.72 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2598,7 +2816,7 @@
 			)
 		)
 		(property "Package" "VSSOP-10 Texas Instruments"
-			(at 176.53 40.64 0)
+			(at 172.72 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2610,7 +2828,7 @@
 			)
 		)
 		(property "SOURCE_URL" "https://www.snapeda.com/parts/ADC124S051CIMM/NOPB/Texas+Instruments/view-part/"
-			(at 176.53 40.64 0)
+			(at 172.72 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2622,7 +2840,7 @@
 			)
 		)
 		(property "MFN (Manufacturer Name)" "Texas Instruments"
-			(at 176.53 40.64 0)
+			(at 172.72 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2633,7 +2851,7 @@
 			)
 		)
 		(property "MFP (Manufarcturer Part Number)" "ADC124S051CIMM/NOPB"
-			(at 176.53 40.64 0)
+			(at 172.72 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2644,7 +2862,7 @@
 			)
 		)
 		(property "S1PN (Source 1 Part Number)" "ADC124S051CIMM/NOPB"
-			(at 176.53 40.64 0)
+			(at 172.72 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2655,7 +2873,7 @@
 			)
 		)
 		(property "S1PL (Source 1 Part Link)" "https://www.digikey.co.uk/en/products/detail/texas-instruments/ADC124S051CIMM-NOPB/755014?s=N4IgTCBcDaIIIBEDCBGMAWAygBgKwqQEkBZYgegDkB5ABQCEQBdAXyA"
-			(at 176.53 40.64 0)
+			(at 172.72 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2666,7 +2884,7 @@
 			)
 		)
 		(property "S2PN (Source 2 Part Number)" "ADC124S051CIMM/NOPB"
-			(at 176.53 40.64 0)
+			(at 172.72 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2677,7 +2895,7 @@
 			)
 		)
 		(property "S2PL (Source 2 Part Link)" "https://eu.mouser.com/en/c/?q=ADC124S051CIMM%2FNOPB"
-			(at 176.53 40.64 0)
+			(at 172.72 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
