@@ -1741,6 +1741,16 @@
 		)
 		(uuid "64c15d6b-4962-4c02-a5e1-4de9d626ee6f")
 	)
+	(text "Brake Pad Rubbing thermocouple connected in via JST connector.\nThis may cause issues with cold temp compensation as it is an \nadditional connection, ensure all circuitry is compact to get accurate \ntemp compensation ensuring reading accuracy."
+		(exclude_from_sim no)
+		(at 47.498 59.69 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "6b8184a8-3689-4959-b72f-7406a85c44df")
+	)
 	(text "SPI MISO\n"
 		(exclude_from_sim no)
 		(at 195.58 28.448 0)
@@ -3094,7 +3104,7 @@
 	)
 	(symbol
 		(lib_id "Device:Thermocouple_Block")
-		(at 24.13 24.13 0)
+		(at 25.4 25.4 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3105,7 +3115,7 @@
 		(fields_autoplaced yes)
 		(uuid "62af98d8-4426-4450-bd68-cbbb5e884cb5")
 		(property "Reference" "TC1"
-			(at 24.13 15.24 0)
+			(at 25.4 16.51 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3115,7 +3125,7 @@
 			)
 		)
 		(property "Value" "30S-K-I-S-300mm"
-			(at 24.13 17.78 0)
+			(at 25.4 19.05 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3125,7 +3135,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 9.525 22.86 0)
+			(at 10.795 24.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3136,7 +3146,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.tc.co.uk/downloads/Brake-Disc-Rubbing-Brake-Pad-Embedded-Thermocouples-Type-30.pdf"
-			(at 9.525 22.86 0)
+			(at 10.795 24.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3147,7 +3157,7 @@
 			)
 		)
 		(property "Description" "Thermocouple with isothermal block"
-			(at 24.13 24.13 0)
+			(at 25.4 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3158,7 +3168,7 @@
 			)
 		)
 		(property "MFN (Manufacturer Name)" "TC Ltd"
-			(at 24.13 24.13 0)
+			(at 25.4 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3169,7 +3179,7 @@
 			)
 		)
 		(property "MFP (Manufarcturer Part Number)" ""
-			(at 24.13 24.13 0)
+			(at 25.4 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3180,7 +3190,7 @@
 			)
 		)
 		(property "S1PN (Source 1 Part Number)" "401-130"
-			(at 24.13 24.13 0)
+			(at 25.4 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3191,7 +3201,7 @@
 			)
 		)
 		(property "S1PL (Source 1 Part Link)" "https://tcdirect.co.uk/product-2-180-44/Brake-Disc-Rubbing-Thermocouple"
-			(at 24.13 24.13 0)
+			(at 25.4 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3202,7 +3212,7 @@
 			)
 		)
 		(property "S2PN (Source 2 Part Number)" ""
-			(at 24.13 24.13 0)
+			(at 25.4 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3213,7 +3223,7 @@
 			)
 		)
 		(property "S2PL (Source 2 Part Link)" ""
-			(at 24.13 24.13 0)
+			(at 25.4 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
