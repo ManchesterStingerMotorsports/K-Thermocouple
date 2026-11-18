@@ -527,7 +527,7 @@
   "pcbnew": {
     "last_paths": {
       "idf": "",
-      "netlist": "",
+      "netlist": "Thermocouple.net",
       "plot": "",
       "specctra_dsn": "",
       "step": "",
