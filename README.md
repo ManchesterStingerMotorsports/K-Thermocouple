@@ -1,5 +1,7 @@
 # Thermocouple
 
+Board layout used as base to combine strain gauge V2 (Johnson Node Hats) to reduce number of mounts needed.
+
 K-Type Brake Pad Rubbing Thermocouple
 https://www.tc.co.uk/thermocouples/brake-disc-thermocouple.html
 
